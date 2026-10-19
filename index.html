@@ -7,37 +7,79 @@
   <title>Rupesh Web Studio</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f1f5f9;
+      background: #f0f3f9;
+      color: #111;
       text-align: center;
     }
 
     header {
-      background: #123c69;
+      background: #173f68;
       color: white;
-      padding: 35px 15px;
+      padding: 55px 15px;
     }
 
-    h1 {
-      font-size: 30px;
+    header h1 {
+      font-size: 36px;
+      margin: 15px 0;
     }
 
-    .box {
+    header p {
+      font-size: 22px;
+    }
+
+    .card {
       background: white;
-      margin: 20px;
-      padding: 25px 15px;
-      border-radius: 12px;
+      max-width: 650px;
+      margin: 38px auto;
+      padding: 35px 20px;
+      border-radius: 20px;
+      width: 90%;
     }
 
-    button {
+    .card h2 {
+      font-size: 32px;
+    }
+
+    .service {
+      font-size: 20px;
+      margin: 22px 0;
+    }
+
+    .contact {
+      display: inline-block;
       background: #16834a;
       color: white;
-      border: none;
-      padding: 14px 22px;
-      border-radius: 8px;
-      font-size: 16px;
+      text-decoration: none;
+      padding: 17px 30px;
+      border-radius: 10px;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .contact:hover {
+      background: #106438;
+    }
+
+    footer {
+      padding: 20px;
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      header p {
+        font-size: 19px;
+      }
     }
   </style>
 </head>
@@ -49,15 +91,26 @@
     <p>हम आपके बिज़नेस को ऑनलाइन लाते हैं!</p>
   </header>
 
-  <div class="box">
+  <section class="card">
     <h2>हमारी सर्विस</h2>
-    <p>Business Website Design</p>
-    <p>Mobile Friendly Website</p>
-    <p>WhatsApp Contact Button</p>
-    <button onclick="alert('धन्यवाद!')">
+
+    <p class="service">Business Website Design</p>
+    <p class="service">Mobile Friendly Website</p>
+    <p class="service">WhatsApp Contact Button</p>
+
+    <a
+      class="contact"
+      href="https://wa.me/916397898161?text=Namaste%2C%20mujhe%20website%20banwani%20hai"
+      target="_blank"
+      rel="noopener noreferrer">
       संपर्क करें
-    </button>
-  </div>
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Rupesh Web Studio</p>
+    <p>आपके बिज़नेस के लिए वेबसाइट बनाने की सेवा</p>
+  </footer>
 
 </body>
 </html>
